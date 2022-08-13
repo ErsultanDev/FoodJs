@@ -503,8 +503,59 @@ window.addEventListener("DOMContentLoaded", function () {
       closeModal(); // вызволи функцию closeModal()
     }, 4000);
   }
+
+  fetch("http://localhost:3000/menu")
+    .then((data) => data.json())
+    .then((res) => console.log(res));
 });
 
-sd
+// filter
+// const names = ["Ivan", "Ann", "Ksenia", "Voldemart"];
 
+// const shortNames = names.filter((item) => {
+//   return item.length < 5;
+// });
+// console.log(shortNames);
 
+// map
+// const answers = ["IvAn", "AnnA", "Hello"];
+
+// const answersMap = answers.map((item) => {
+//   return item.toLowerCase();
+// });
+
+// console.log(answersMap);
+
+// every/some
+
+// const some = [421,4, 34, 124];
+
+// console.log(some.some((item) => typeof item === "number")); // если один из элементов массива является числом
+// console.log(some.every((item) => typeof item === "number"));  // если все элементы массива являются числами
+
+// reduce
+
+// const arr = [5, 5, 5, 5, 5, 5];
+
+// const arrReduce = arr.reduce((sum, current) => {
+//   return sum + current;
+// });
+// console.log(arrReduce);
+
+// const arr = ['apple', 'pear', 'plum', 'banana'];
+
+// const arrReduce = arr.reduce((sum, current) => {
+//   return sum + ', ' + current;
+// });
+// console.log(arrReduce);
+
+// const obj = {
+//   ivan: "persone",
+//   ann: "persone",
+//   dog: "animal",
+//   cat: "animal",
+// };
+
+// const newArr = Object.entries(obj);
+
+// console.log(newArr);
